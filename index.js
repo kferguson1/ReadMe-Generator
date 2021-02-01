@@ -1,4 +1,7 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const util = require('util');
+const generatemarkdown = require('./util/generatemarkdown');
 
 inquirer
   .prompt([
@@ -47,4 +50,4 @@ inquirer
       message: 'What does the user need to know about contributing to the repo?',
       name: 'contributeRepo',
     },
-  ])
+  ]);
