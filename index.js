@@ -3,7 +3,8 @@ const fs = require('fs');
 const util = require('util');
 const generatemarkdown = require('./util/generatemarkdown');
 
-inquirer
+
+Questions 
   .prompt([
     {
       type: 'input',
@@ -51,3 +52,29 @@ inquirer
       name: 'contributeRepo',
     },
   ]);
+
+  function writetoFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if(err) {
+            return console.log(err);
+        }
+        console.log("README.md file generated successfully!")
+    });
+};
+
+const writeFileAsync = util.promisify(writetoFile);
+
+// // Open App
+async function init() {
+    try {
+        const answers = await inquirer.prompt;
+        const markdown = generateMarkdown(answers);
+        console.log(markdown);
+
+        await writeFileAsync('ReadMe.md', markdown);
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+init();
