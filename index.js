@@ -4,7 +4,7 @@ const util = require('util');
 const generatemarkdown = require('./util/generatemarkdown');
 
 
-Questions 
+inquirer 
   .prompt([
     {
       type: 'input',
@@ -67,7 +67,7 @@ const writeFileAsync = util.promisify(writetoFile);
 // // Open App
 async function init() {
     try {
-        const answers = await inquirer.prompt;
+        const answers = await inquirer.prompt(inquirer);
         const markdown = generateMarkdown(answers);
         console.log(markdown);
 
