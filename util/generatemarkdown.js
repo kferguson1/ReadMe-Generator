@@ -1,12 +1,16 @@
-function generatemarkdown(data){
-    return '<h1 align="center">${data.project}</h1></p>';
-
-// ## **Description**
-    
-// ${data.description}
-
-// ---
-
-// ## Table of 
+function generatemarkdown(data) {
+    return 'success'
 
 }
+
+// ## Table of contents
+
+// - [Description](#Description)
+// - [License](#License)
+// - [Installation](#Installation)
+// - [Test](#Test)
+// - [Usage](#Usage)
+// - [Contributors](#Contributors)
+// - [GitHub Info](#GitHub) 
+
+module.exports = generatemarkdown;

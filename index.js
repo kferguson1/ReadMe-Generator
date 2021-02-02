@@ -4,8 +4,7 @@ const util = require('util');
 const generatemarkdown = require('./util/generatemarkdown');
 
 
-inquirer 
-  .prompt([
+const Prompts = [
     {
       type: 'input',
       message: 'What is your GitHub username?',
@@ -51,7 +50,7 @@ inquirer
       message: 'What does the user need to know about contributing to the repo?',
       name: 'contributeRepo',
     },
-  ]);
+  ];
 
   function writetoFile(fileName, data) {
     fs.writeFile(fileName, data, err => {
@@ -67,8 +66,8 @@ const writeFileAsync = util.promisify(writetoFile);
 // // Open App
 async function init() {
     try {
-        const answers = await inquirer.prompt(inquirer);
-        const markdown = generateMarkdown(answers);
+        const answers = await inquirer.prompt(Prompts);
+        const markdown = generatemarkdown(answers);
         console.log(markdown);
 
         await writeFileAsync('ReadMe.md', markdown);
