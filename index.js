@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const generatemarkdown = require('./util/generatemarkdown');
+const generatemarkdown = require('./utils/generatemarkdown.js');
 
 
 const Prompts = [

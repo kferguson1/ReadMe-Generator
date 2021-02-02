@@ -1,1 +1,1 @@
-success
+${data.project}
