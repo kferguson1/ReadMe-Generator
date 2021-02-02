@@ -1,9 +1,9 @@
 
-    # **ReadMe-Generator**
+    # ReadMe-Generator
     
     ## **Description**
 
-    This will cut down on time spent making a read me. This time can be put toward the project!
+    This will shave time off of creating a read me. That time can be spent on the project!
 
     ---
 
@@ -40,19 +40,19 @@
 
     ## **Usage**
 
-    It will save you time!
+    it wil save you time!
 
     ---
 
     ## **Contributors**
 
-    Please submit to another branch!
+    Please push to separate branch!
 
     ---
 
     ## **GitHub Info**
 
-    Find me on GitHub: kferguson1
+    Find me on GitHub: www.github.com/kferguson1
 
     ---
 
