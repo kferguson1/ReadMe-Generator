@@ -1,6 +1,6 @@
 function generatemarkdown(data) {
     return `
-    # **${answers.project}**
+    # ${data.project}
     
     ## **Description**
 
@@ -53,13 +53,13 @@ function generatemarkdown(data) {
 
     ## **GitHub Info**
 
-    ${data.username}
+    Find me on GitHub: www.github.com/${data.username}
 
     ---
 
     ## **Email**
 
-    ${data.email}
+    Email me at: ${data.email}
 
     ---
 
